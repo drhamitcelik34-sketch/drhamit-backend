@@ -135,7 +135,8 @@ const BRANSLAR = [
   "Dermatoloji", "Psikiyatri", "Gastroenteroloji", "Endokrinoloji",
   "Göğüs Hastalıkları", "Genel Cerrahi", "Çocuk Sağlığı ve Hastalıkları",
   "Enfeksiyon Hastalıkları", "Nefroloji", "Romatoloji",
-  "Fizik Tedavi ve Rehabilitasyon", "Acil Tıp"
+  "Fizik Tedavi ve Rehabilitasyon", "Acil Tıp",
+  "Diş Hekimliği", "Kalp ve Damar Cerrahisi"
 ];
 const BRANSLAR_EN = [
   "Internal Medicine", "Cardiology", "Neurology", "Orthopedics", "Urology",
@@ -143,7 +144,8 @@ const BRANSLAR_EN = [
   "Dermatology", "Psychiatry", "Gastroenterology", "Endocrinology",
   "Pulmonology", "General Surgery", "Pediatrics",
   "Infectious Diseases", "Nephrology", "Rheumatology",
-  "Physical Medicine and Rehabilitation", "Emergency Medicine"
+  "Physical Medicine and Rehabilitation", "Emergency Medicine",
+  "Dentistry", "Cardiovascular Surgery"
 ];
 
 const schema = {
@@ -286,4 +288,3 @@ app.get("/", (req, res) => res.send("DrHamit degerlendirme servisi calisiyor."))
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Sunucu ${PORT} portunda calisiyor`));
-
