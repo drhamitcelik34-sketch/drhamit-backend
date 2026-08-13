@@ -241,7 +241,7 @@ app.post("/degerlendir", async (req, res) => {
     const systemBlocks = [{ type: "text", text: instructions, cache_control: { type: "ephemeral" } }];
 
     const controller = new AbortController();
-    const timer = setTimeout(() => controller.abort(), 55_000);
+    const timer = setTimeout(() => controller.abort(), 50_000);
     const response = await fetch("https://api.anthropic.com/v1/messages", {
       method: "POST",
       signal: controller.signal,
@@ -286,4 +286,3 @@ app.get("/", (req, res) => res.send("DrHamit degerlendirme servisi calisiyor."))
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Sunucu ${PORT} portunda calisiyor`));
-
